@@ -35,5 +35,5 @@ public class WordsDBHelper extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL(SQL_DELETE_DATABASE);
         onCreate(sqLiteDatabase);
     }
-}
 
+}

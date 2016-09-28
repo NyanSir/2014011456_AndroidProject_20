@@ -20,8 +20,7 @@ public class SearchActivity extends AppCompatActivity {
         ArrayList<Map<String, String>> items= (ArrayList<Map<String, String>>) bundle.getSerializable("result");
 
         SimpleAdapter adapter = new SimpleAdapter(this, items, R.layout.item,
-                new String[]{Words.Word._ID,Words.Word.COLUMN_NAME_WORD, Words.Word.COLUMN_NAME_MEANING,
-                        Words.Word.COLUMN_NAME_SAMPLE},
+                new String[]{Words.Word._ID,Words.Word.COLUMN_NAME_WORD, Words.Word.COLUMN_NAME_MEANING, Words.Word.COLUMN_NAME_SAMPLE},
                 new int[]{R.id.textId,R.id.textViewWord, R.id.textViewMeaning, R.id.textViewSample});
 
         ListView list = (ListView) findViewById(R.id.lstSearchResultWords);
